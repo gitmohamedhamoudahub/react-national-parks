@@ -1,8 +1,19 @@
-# React + Vite
+# **🌲 National Parks Explorer**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A **React + Vite** application that allows users to explore **U.S. National Parks** based on selected states. The app fetches real-time data from the **National Park Service API** and displays park details, images, activities, and entrance fees.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## **🚀 Features**
+
+✅ **State-Based Park Filtering** – Select a state to view its national parks.  
+✅ **Dynamic Image Rotator** – Showcasing park images in a smooth slideshow.  
+✅ **Park Details** – Includes park name, location, address, and entrance fees.  
+✅ **Activities Display** – Shows park activities in a **well-formatted, spaced list**.  
+✅ **Responsive Design** – Mobile-friendly layout with clean UI.  
+✅ **Built with Vite** – Fast refresh and optimized performance.
+
+---
+
+## **Technologies Used**
+    **React.js + Vite** 
