@@ -35,6 +35,9 @@ body,.mainContainer{
   justify-content: center;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   width: 100vw;
+  display: flex;
+  flex-direction: row;
+ align-items: center;
 }
 
 .nav-links {
@@ -117,4 +120,183 @@ body,.mainContainer{
   height: 100vh; /* Full viewport height */
   width: 100vw; /* Full viewport width */
   text-align: center; /* Center text */
+}
+
+
+.img-gallery{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  padding: 20px;
+}
+
+.imgContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  padding: 20px;
+}
+
+.imgRotator, img{
+  border : 2px solid grey;
+  border-radius: 20px;
+  width: 75%;
+  height: auto;
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.fade-in {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.fade-out {
+  opacity: 0;
+  transform: scale(0.95);
+}
+
+.weekDay{
+  font-size: 1rem;
+  color: green !important;
+  margin-bottom: 5px;
+}
+.ImageC{
+  width: 150px;
+  height: 150px; 
+  object-fit: cover;
+  border-radius: 50%; 
+}
+
+.operating-hours-table {
+  width: auto !important;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.operating-hours-table th, 
+.operating-hours-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.operating-hours-table th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.operating-hours-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+.park-card-WH{
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+.entrance-fees-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  font-size: 10px;
+}
+
+.entrance-fees-table th, 
+.entrance-fees-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.entrance-fees-table th {
+  background-color: #007BFF;
+  color: white;
+}
+
+.entrance-fees-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.parks-container-details {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.park-card {
+  width: 80%;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  background: #f9f9f9;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.park-name {
+  font-size: 1.5rem;
+  color: #007BFF;
+}
+
+.park-images {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.park-image {
+  width: 100px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.park-details p {
+  margin: 5px 0;
+}
+
+.entrance-fees-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 5px;
+}
+
+.entrance-fees-table th, .entrance-fees-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.entrance-fees-table th {
+  background-color: #007BFF;
+  color: white;
+}
+
+.activities-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;  /* Add space between activity items */
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+.activity-item {
+  background-color: #f0f0f0;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #333;
 }

@@ -26,8 +26,12 @@ export const ParksProvider = ({ children }) => {
     getParks(stateCode);
   }, [stateCode]);
 
+  const getAllParkImages = () => {
+    return parks.flatMap(park => park.images.map(image => image.url));
+  };
+
   return (
-    <ParksContext.Provider value={{ parks, loading, stateCode, setStateCode }}>
+    <ParksContext.Provider value={{ parks, loading, stateCode, setStateCode,getAllParkImages }}>
       {children}
     </ParksContext.Provider>
   );
