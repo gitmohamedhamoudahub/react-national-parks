@@ -7,13 +7,14 @@ function Parks(props) {
   const apiKey = API_KEY;
   const params = useParams()
   const { stateCode } = useParams();
-  
-
+//   if (!stateCode) stateCode = {state: 'NC'};
+  console.log('Selected State = >',stateCode);
+ 
   const [url, setURL] = useState('');
   const [parks, setParks] = useState([]);  // Initialize parks as an empty array
   const [loadingState, setLoadingState] = useState(true);
   useEffect(() => {
-    const newURL = `https://developer.nps.gov/api/v1/parks?limit=12&statecode=${stateCode}&api_key=${apiKey}`;
+    const newURL = `https://developer.nps.gov/api/v1/parks?limit=12&statecode=${stateCode?stateCode: 'NC'}&api_key=${apiKey}`;
     setURL(newURL);  
   }, [stateCode]);  
   
