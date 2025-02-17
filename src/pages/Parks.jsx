@@ -12,7 +12,17 @@ function Parks() {
           <div className="park-details">
             <h3>{park.name}</h3>
             <p>{park.states}</p>
-            <p>ID: {park.id}</p>
+            <div><strong>🎯 Activities:</strong></div>
+        <div className="activities-container">
+          {park.activities.length > 0 
+            ? park.activities.map((activity, index) => (
+                <div key={index} className="activity-item">
+                  {activity.name}
+                </div>
+              )) 
+            : <div>No Activities Listed</div>}
+        </div>
+
           </div>
         </div>
       ))}
